@@ -1,0 +1,17 @@
+{
+	"name": "linkedin-job-scrapping",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"intern": "node linkedin-intern-job-scrapper.js",
+		"fulltime": "node linkedin-fulltile-job-scrapper.js",
+		"start": "npm run intern & npm run fulltime"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"linkedin-jobs-scraper": "^8.0.0"
+	}
+}
