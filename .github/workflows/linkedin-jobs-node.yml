@@ -1,4 +1,4 @@
-name: linkedin job scraper node
+name: LinkedIn Job Scraper Node
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [master]
   schedule:
-    - cron: '*/2 * * * *'
+    - cron: '0 0 * * *'
 jobs:
   build:
     strategy:
@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Build workflow with node version ${{ matrix.node-version }}
+      - name: Build workflow with Node version ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
