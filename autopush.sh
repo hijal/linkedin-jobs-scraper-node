@@ -1,7 +1,7 @@
 #!/bin/sh
 DATE_N=`/bin/date "+%Y-%m-%d %H:%M:%S"`
-/usr/local/bin/node linkedin_fulltime_scraper.js
-# /usr/local/bin/node linkedin_intern_scraper.js
+/usr/local/bin/node linkedin-fulltile-job-scrapper.js
+/usr/local/bin/node linkedin-intern-job-scrapper.js
 
 
 /usr/local/bin/git add .
